@@ -1,0 +1,40 @@
+## Usando de guía el proporcionado por docker hub de wordpress
+version: "3.1"
+
+# Creación de servicios
+services:
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      # Variables de entorno para la conexión a la base de datos
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+    volumes:
+      # Volumen para guardar los archivos de wordpress
+      - wordpress:/var/www/html
+
+  # Servicio de base de datos
+  db:
+    image: mysql:8.0
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      # Variables de entorno para la creación de la base de datos
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+    volumes:
+      # Volumen para guardar los archivos de la base de datos
+      - db:/var/lib/mysql
+
+# Volumenes para guardar los archivos de wordpress y la base de datos
+volumes:
+  wordpress:
+  db:
