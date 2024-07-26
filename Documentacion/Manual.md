@@ -1,6 +1,6 @@
 # Aprendizaje de WordPress
 
-## Este es una guía de lo que voy avanzando en WordPress
+## Este manual es una constancia sobre lo que voy avanzando en WordPress
 
 ### Estudiante
 
@@ -18,7 +18,13 @@
    - [Inicio de sesión](#inicio-de-sesión)
    - [Pantalla Inicio](#pantalla-inicio)
 3. [Configuración de Página](#configuración-de-página)
+   - [Actualización](#actualización)
    - [Configuración de tema](#configuración-de-tema)
+   - [Configuración de plantilla](#configuración-de-plantilla)
+4. [Ediciones en la página](#ediciones-en-la-página)
+   - [Vista Inicio](#vista-inicio)
+   - [Vista Guía](#vista-guía)
+   - [Vista Perfil](#vista-perfil)
 
 ## Despliegue en Docker
 
@@ -109,6 +115,96 @@ Nos carga la pantalla de inicio de WordPress
 
 En este momento se empieza el curso de WordPress
 
+### Actualización
+
+Antes de empezar nos sale una actualización de WordPress, procedemos con la instalación.
+
+![Mensaje](IMG/Astra/Mensaje_Actualizacion.png)
+
+Nos aparece que hemos actualizado correctamente.
+
+![Actualizado](IMG/Astra/Actualizado.png)
+
 ### Configuración de tema
 
 En este curso vamos a hacer uso de plantillas proporcionadas de WordPress, en específico la de `Astra`
+
+Hacemos la busqueda del tema
+
+![Busqueda](IMG/Astra/Buscar_Astra.png)
+
+Antes de usar este tema revisamos como nos aparece la página.
+
+![Antes](IMG/Astra/Antes_del_tema.png)
+
+Aplicamos el tema y volvemos a verificar la página.
+
+![Despues](IMG/Astra/Despues_del_tema.png)
+
+### Configuración de plantilla
+
+Ahora procedemos a ir a la parte de Astra para activar la plantilla
+
+![PlantillaInicio](IMG/Astra/Plantilla_Inicio.png)
+
+A continuación nos aparece que ya podemos empezar la construcción de la plantilla.
+
+![Construccion](IMG/Astra/Empezar_construccion.png)
+
+Seleccionamos el clásico y continuamos.
+
+![Plantillas](IMG/Astra/Seleccion_plantilla.png)
+
+En este caso seleccionamos la plantilla `Nature`.
+
+![Aplicar](IMG/Astra/Aplicar_plantilla.png)
+
+Le damos continuar y la aplicamos, luego nos aparece el siguiente mensaje.
+
+![Finalizado](IMG/Astra/Terminar_plantilla.png)
+
+## Ediciones en la página
+
+En esta parte la edición queda a criterio de la persona, en mi caso las llevo de la siguiente manera:
+
+### Vista Inicio
+
+Se muestra la cabecera.
+
+![Inicio1](IMG/Edicion/Home1.png)
+
+Se muestra el pie de página.
+
+![Inicio2](IMG/Edicion/Home2.png)
+
+Esta vista se está editando con elementor.
+
+![Inicio3](IMG/Edicion/Edit_home.png)
+
+### Vista Guía
+
+Se muestra información de este curso.
+
+![Guia1](IMG/Edicion/guia1.png)
+
+Se muestra información de los tutoriales vistos.
+
+![Guia2](IMG/Edicion/guia2.png)
+
+Esta vista se está editando con el editor de WordPress.
+
+![Guia3](IMG/Edicion/edit_guia.png)
+
+### Vista Perfil
+
+Se muestra un poco de mi información academica.
+
+![Info1](IMG/Edicion/info1.png)
+
+Se muestra información de algunos proyectos de la carrera.
+
+![Info2](IMG/Edicion/info2.png)
+
+Esta vista se está editando con el editor de WordPress.
+
+![Info3](IMG/Edicion/edit_info.png)
