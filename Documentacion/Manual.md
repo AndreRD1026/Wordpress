@@ -25,6 +25,13 @@
    - [Vista Inicio](#vista-inicio)
    - [Vista Guía](#vista-guía)
    - [Vista Perfil](#vista-perfil)
+   - [Vista Contacto](#vista-contacto)
+5. [Integración de Apis](#integración-de-apis)
+   - [Plugins necesarios](#plugins-necesarios)
+   - [Api ejemplo](#api-ejemplo)
+   - [Configuración Api](#configuración-api)
+   - [Snippet](#snippet)
+   - [Resultado de datos](#resultado-de-datos)
 
 ## Despliegue en Docker
 
@@ -208,3 +215,67 @@ Se muestra información de algunos proyectos de la carrera.
 Esta vista se está editando con el editor de WordPress.
 
 ![Info3](IMG/Edicion/edit_info.png)
+
+### Vista Contacto
+
+En esta vista se hace uso de un plugin para formularios llamado `WPForms.`
+
+![Forms](IMG/Edicion/wpforms.png)
+
+Se puede poner en contacto con el desarrollador, mediante un form o por correo electrónico.
+
+![Contacto](IMG//Edicion/contacto.png)
+
+Esta vista se está editando con el editor de WordPress.
+
+![Contacto2](IMG/Edicion/edit_contacto.png)
+
+## Integración de Apis
+
+En esta parte vamos por la implementación de Apis con WordPress
+
+### Plugins necesarios
+
+Los plugins usados como guía son los siguientes:
+
+Para poder hacer conexión con Apis es la de `WPGet.`
+
+![WPGet](IMG/Api/obtener_plugin.png)
+
+Para poder trabajar con código desde WordPress se hace uso de `Snippets.`
+
+![Snippet](IMG/Api/obtener_snippets.png)
+
+### Api ejemplo
+
+En este ejemplo se hace uso de una api pública, relacionada con vinos.
+
+![Api](IMG/Api/api_ejemplo.png)
+
+### Configuración Api
+
+Empezamos con la configuración para obtener datos de la api, en este caso es `https://api.sampleapis.com/wines.`
+
+![Config](IMG/Api/datos_api.png)
+
+Indicamos el endpoint de dónde traeremos los datos, en este caso es `/red.`
+
+![Endpoint](IMG/Api/endpoint_api.png)
+
+En el mismo indicamos que queremos el formato `PHP array data`, debido a que haremos uso del `Shortcode` proporcionado por la extensión.
+
+![Pagina](IMG/Api/pagina_api.png)
+
+### Snippet
+
+Para poder manejar los datos que obtendremos en `Shortcode`, usaremos un snippet o una integración de código, de la siguiente manera:
+
+![Snippet](IMG/Api/snippet_datos.png)
+
+En el código anterior verificamos que no esté vacío y sea un array, luego de eso se hace la estructura de una tabla y con un foreach se va llenando cada campo con los datos obtenidos.
+
+### Resultado de datos
+
+El resultado de todo lo anterior es el siguiente:
+
+![Resultado](IMG/Api/resultado.png)
